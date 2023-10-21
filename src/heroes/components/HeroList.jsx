@@ -1,9 +1,12 @@
 import { HeroCard } from "./HeroCard";
 import { getHeroesByPublisher } from "../helpers";
+import { useMemo } from "react";
 
 export const HeroList = ({publisher}) => {
 
-    const heroes = getHeroesByPublisher(publisher);
+    // USEMEMO MEMORIZA VALORES
+    // USECALLBACK MEMORIZA FUNCIONES
+    const heroes = useMemo(()=>getHeroesByPublisher(publisher),[publisher]);
     //console.log(heroes);
 
     return (
