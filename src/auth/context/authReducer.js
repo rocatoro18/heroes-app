@@ -7,7 +7,7 @@ export const authReducer = (state = {}, action) => {
     // QUE NO LLAMAN RECURSOS EXTERNOS, UNICAMENTE TIENEN
     // QUE RESOLVERSE CON EL STATE QUE RECIBEN Y LA ACTION
     // EL PROVIDER PUEDE SERVIR PARA ESO
-
+    
     switch(action.type){
         case types.login:
             return {
